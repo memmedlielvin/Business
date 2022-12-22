@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="icon/company-logo.svg" />
+    <link rel="stylesheet" href="css/all.css" />
+    <script src="main.js/main.js"></script>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+    <title>Business</title>
+  </head>
+  <body>
+    <nav id="right-nav" class="d-none d-md-flex px-4">
+      <i
+        class="fa-solid fa-xmark close-right-nav"
+        onclick="closeRightNav();"
+      ></i>
+
+      <div>
+        <img src="icon/company-logo-right-nav.svg" alt="company-logo" />
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+          nostrum rem quod rerum corrupti nulla doloribus obcaecati distinctio
+          quis harum.
+        </p>
+      </div>
+
+      <div>
+        <h3>Quick Links</h3>
+        <p><a href="#">About Us</a></p>
+        <p><a href="#">Our Team</a></p>
+        <p><a href="#">Latest News</a></p>
+        <p><a href="#">Contact Us</a></p>
+      </div>
+
+      <div>
+        <h3>Follow Us</h3>
+        <p>
+          <a href="https://www.facebook.com" target="_blank"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a href="https://www.instagram.com" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://www.twitter.com" target="_blank"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="https://www.linkedin.com" target="_blank"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a href="https://www.youtube.com" target="_blank"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </p>
+      </div>
+    </nav>
+    <nav
+      id="pc-nav"
+      class="container-fluid m-0 d-flex justify-content-between align-items-center"
+    >
+      <h1>
+        <a href="#home"
+          ><img src="icon/company-logo.svg" alt="company-logo" />
+        </a>
+      </h1>
+      <ul class="d-none d-md-flex">
+        <li><a class="px-md-2 px-lg-4" href="#home">Home</a></li>
+        <li><a class="px-md-2 px-lg-4" href="#services">Services</a></li>
+        <li><a class="px-md-2 px-lg-4" href="#portfolio">Portfolio</a></li>
+        <li><a class="px-md-2 px-lg-4" href="#pricing">Pricing</a></li>
+        <li><a class="px-md-2 px-lg-4" href="#team">Team</a></li>
+        <li><a class="px-md-2 px-lg-4" href="#contact">Contact</a></li>
+      </ul>
+      <div class="d-none d-md-block">
+        <i
+          class="fa-solid fa-bars open-right-nav"
+          onClick="openRightNav();"
+        ></i>
+      </div>
+    </nav>
+
+    <section id="home" class="container-fluid py-md-5">
+      <div
+        id="home-inner"
+        class="container d-md-flex justify-content-between align-items-center"
+      >
+        <div class="w-100 w-md-75">
+          <h1>
+            Corporate & Business<br />
+            Site Template By Ayro UI.
+          </h1>
+          <p>
+            We are a digital agency that helps brands to achieve their business
+            outcomes. We see technology as a tool to create amazing things
+          </p>
+          <div>
+            <a href="#">GET STARTED</a
+            ><button>
+              <i class="fa-solid fa-circle-play"></i><span>Watch Intro</span>
+            </button>
+          </div>
+        </div>
+        <div class="mt-5 mt-lg-0 w-100 w-md-25 ms-0 ms-md-5">
+          <img src="img/home-hero-image.jpg" alt="home-hero-image" />
+        </div>
+      </div>
+    </section>
+
+    <section id="home-bottom-section" class="container-fluid py-5">
+      <div
+        id="home-bottom-section-inner"
+        class="container d-md-flex justify-content-md-between align-items-md-center"
+      >
+        <div >
+          <img src="img/home-our-team.jpg" alt="home-our-team" class="img"/>
+        </div>
+
+        <div >
+          <div class=" mt-5 mt-lg-0 ">
+          <h5>--- OUR STORY</h5>
+          <h1>Our team comes with the <br> experience and knowledge</h1>
+          <div class="btn-group">
+            <button class="WhoWeAre" onclick="WhoWeAre();">Who We Are</button>
+            <button class="OurVision" onclick="OurVision();">Our Vision</button>
+            <button class="OurHistory" onclick="OurHistory();">Our History</button>
+          </div>
+
+          <div id="change-info">
+            <p id="Who-We-Are" style="transition: all 1s;">Who We Are Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, quisquam nisi consequuntur suscipit debitis enim. Molestiae pariatur animi voluptate obcaecati! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, earum! <br><br>
+              Who We Are dolor sit amet consectetur adipisicing elit. Sed sapiente cupiditate ipsum pariatur nam omnis natus reiciendis quas, porro aperiam? </p>
+            <p id="Our-Vision">Our Vision Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, quisquam nisi consequuntur suscipit debitis enim. Molestiae pariatur animi voluptate obcaecati! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, earum! <br> <br>
+              Our Vision dolor sit amet consectetur adipisicing elit. Sed sapiente cupiditate ipsum pariatur nam omnis natus reiciendis quas, porro aperiam? </p>
+            <p id="Our-history">Our history Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, quisquam nisi consequuntur suscipit debitis enim. Molestiae pariatur animi voluptate obcaecati! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, earum! <br><br>
+              Our-history dolor sit amet consectetur adipisicing elit. Sed sapiente cupiditate ipsum pariatur nam omnis natus reiciendis quas, porro aperiam? </p>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="container mt-5" >
+     
+
+  <h5 class="mx-auto">Services</h5>
+  <h1 class="text-center mt-2">Our Best Services</h1>
+  <p class="text-center">There are many variations of passages of Lorem Ipsum available, <br> but the majority have suffered alteration in some form.</p>
+  
+  <div id="services-inner-boxs" class="row pt-5" >
+    
+    
+    <div class="col-12 col-lg-4 p-2">
+      <div class="border rounded-3"><i class="bi bi-capsule"></i>
+        <h5>Refreshing Design</h5>
+        <p>Lorem ipsum dolor sit amet, adipscing 
+          elitr, sed diam nonumy eirmod tempor 
+          ividunt labor dolore magna.</p>
+        </div>
+    </div>
+
+    <div class="col-12 col-lg-4 p-2">
+      <div class="border rounded-3"><i class="bi bi-bootstrap-fill"></i>
+        <h5>Solid Bootstrap 5</h5>
+        <p>Lorem ipsum dolor sit amet, adipscing 
+          elitr, sed diam nonumy eirmod tempor 
+          ividunt labor dolore magna.</p>
+        </div>
+    </div>
+
+    <div class="col-12 col-lg-4 p-2">
+      <div class="border rounded-3"><i class="fa-solid fa-section"></i>
+        <h5>100+ Components</h5>
+        <p>Lorem ipsum dolor sit amet, adipscing 
+          elitr, sed diam nonumy eirmod tempor 
+          ividunt labor dolore magna.</p>
+        </div>
+    </div>
+
+    <div class="col-12 col-lg-4 p-2">
+      <div class="border rounded-3"><i class="bi bi-speedometer"></i>
+        <h5>Speed Optimized</h5>
+        <p>Lorem ipsum dolor sit amet, adipscing 
+          elitr, sed diam nonumy eirmod tempor 
+          ividunt labor dolore magna.</p>
+        </div>
+    </div>
+
+    <div class="col-12 col-lg-4 p-2">
+      <div class="border rounded-3"><i class="bi bi-stack"></i>
+        <h5>Fully Customizable</h5>
+        <p>Lorem ipsum dolor sit amet, adipscing 
+          elitr, sed diam nonumy eirmod tempor 
+          ividunt labor dolore magna.</p>
+        </div>
+    </div>
+
+    <div class="col-12 col-lg-4 p-2">
+      <div class="border rounded-3"><i class="bi bi-arrow-repeat"></i>
+        <h5>Regular Updates</h5>
+        <p>Lorem ipsum dolor sit amet, adipscing 
+          elitr, sed diam nonumy eirmod tempor 
+          ividunt labor dolore magna.</p>
+        </div>
+    </div>
+    
+    </div>
+  
+  
+  </div>
+
+
+
+    </section>
+
+
+
+    <section id="services-bottom" class="container-fluid mt-3 py-5">
+
+    <div id="services-bottom-inner" class="container">
+
+      <h5 class="mx-auto">Our Intro Video</h5>
+  <h1 class="text-center mt-2">Watch Our Promo Video</h1>
+  <p class="text-center">There are many variations of passages of Lorem Ipsum available, <br> but the majority have suffered alteration in some form.</p>
+
+  <div class="col-12 pt-5 pt-lg-0">
+    <video controls poster="videos/video-bg.png" >
+   
+    <source src="videos/Welcome to Silicon Valley _ Official Trailer.mp4" >
+
+  </video>
+</div>
+    </div>
+    </section>
+
+    <section id="portfolio" class="container-fluid mt-5">
+      <div id="portfolio-inner" class="container">
+        <h5 class="mx-auto">Our Portfolio</h5>
+        <h1 class="text-center mt-2">Our Recent Works</h1>
+        <p class="text-center">There are many variations of passages of Lorem Ipsum available,  but <br>the majority have suffered alteration in some form.</p>
+
+
+        <div id="portfolio-inner-boxs" class="row pt-5 " >
+          
+          
+          <div class="col-12 col-lg-4 p-2">
+            <div class="border">
+              <div><img src="img/portfolio-graphig-design.jpg" alt="graphig-design" class="img"></div>
+            <h5>Graphics Design</h5>
+            <p>Lorem ipsum dolor sit amet, adipscing <br>
+              elitr, sed diam nonumy eirmod tempor <br>
+              ividunt labor dolore magna.</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4 p-2">
+            <div class="border">
+              <div><img src="img/portfolio-web-development.jpg" alt="web-development"></div>
+            <h5>Web Development</h5>
+            <p>Lorem ipsum dolor sit amet, adipscing <br>
+              elitr, sed diam nonumy eirmod tempor <br>
+              ividunt labor dolore magna.</p>
+          </div>
+        </div>
+
+
+      
+          <div class="col-12 col-lg-4 p-2">
+          <div class="border">
+            <div> <img src="img/portfolio-app-development.jpg" alt="app-development"></div>
+            <h5>App Development</h5>
+            <p>Lorem ipsum dolor sit amet, adipscing <br>
+              elitr, sed diam nonumy eirmod tempor <br>
+              ividunt labor dolore magna.</p>
+
+
+          </div>
+          </div>
+      
+          <div class="col-12 col-lg-4 p-2">
+           <div class="border">
+            <div> <img src="img/portfolio-digital-marketing.jpg" alt="digital-marketing"></div>
+           <h5>Digital Marketing</h5>
+           <p>Lorem ipsum dolor sit amet, adipscing <br>
+             elitr, sed diam nonumy eirmod tempor <br>
+             ividunt labor dolore magna.</p>
+            </div>
+          </div>
+      
+          <div class="col-12 col-lg-4 p-2">
+            <div class="border"><div><img src="img/portfolio-seo-services.jpg" alt="seo-services"></div>
+            <h5>SEO Services</h5>
+            <p>Lorem ipsum dolor sit amet, adipscing <br>
+              elitr, sed diam nonumy eirmod tempor <br>
+              ividunt labor dolore magna.</p></div>
+          </div>
+      
+          <div class="col-12 col-lg-4 p-2">
+            <div class="border"><div><img src="img/portfolio-product-design.jpg" alt="product-design"></div>
+            <h5>Product Design</h5>
+            <p>Lorem ipsum dolor sit amet, adipscing <br>
+              elitr, sed diam nonumy eirmod tempor <br>
+              ividunt labor dolore magna.</p></div>
+          </div>
+          
+        
+        
+        </div>
+
+
+      </div>
+    </section>
+
+    <section id="pricing" class="container-fluid mt-5 py-5">
+
+      <div id="pricing-inner" class="container">
+        
+        <h5 class="mx-auto">Pricing</h5>
+        <h1 class="text-center mt-2">Pricing & Plans</h1>
+        <p class="text-center">There are many variations of passages of Lorem Ipsum available,  but the majority have suffered alteration in some form.</p>
+
+
+        <div id="pricing-inner-boxes" class="row pt-lg-5 " >
+          <div class="col-12 col-lg-4 my-4 my-lg-0 ">
+            
+           <div class="p-3"> 
+            <h5 class="mx-auto">Starter</h5>
+            <h6 class="text-center">Lorem Ipsum is simply dummy text of the printing and industry.</h6>
+            <h1 class="text-center"><sup><small style="color:cadetblue ;">$</small></sup>0<sub><small style="color:cadetblue ;">/mo</small></sub></h1>
+            <h4><a href="#" class="d-inline-block mx-auto ">START FREE TRIAL</a></h4>
+            <p><i class="fa-regular fa-circle-check"></i>Cras justo odio.</p>
+            <p><i class="fa-regular fa-circle-check"></i>Dapibus ac facilisis in.</p>
+            <p><i class="fa-regular fa-circle-check"></i>Morbi leo risus.</p>
+            <p><i class="fa-regular fa-circle-check"></i>Excepteur sint occaecat velit.</p>
+
+          </div>
+
+            
+          </div>
+          <div class="col-12 col-lg-4 my-4 my-lg-0 " >
+            
+            <div><h5 class="mx-auto">Starter</h5>
+              <h6 class="text-center">Lorem Ipsum is simply dummy text of the printing and industry.</h6>
+              <h1 class="text-center"><sup><small style="color:cadetblue ;">$</small></sup>0<sub><small style="color:cadetblue ;">/mo</small></sub></h1>
+              <h4><a href="#" class="d-inline-block mx-auto ">START FREE TRIAL</a></h4>
+              <p><i class="fa-regular fa-circle-check"></i>Cras justo odio.</p>
+              <p><i class="fa-regular fa-circle-check"></i>Dapibus ac facilisis in.</p>
+              <p><i class="fa-regular fa-circle-check"></i>Morbi leo risus.</p>
+              <p><i class="fa-regular fa-circle-check"></i>Excepteur sint occaecat velit.</p></div>
+
+            
+          </div>
+          <div class="col-12 col-lg-4 my-4 my-lg-0">
+            
+            <div><h5 class="mx-auto">Starter</h5>
+              <h6 class="text-center">Lorem Ipsum is simply dummy text of the printing and industry.</h6>
+              <h1 class="text-center"><sup><small style="color:cadetblue ;">$</small></sup>0<sub><small style="color:cadetblue ;">/mo</small></sub></h1>
+              <h4><a href="#" class="d-inline-block mx-auto ">START FREE TRIAL</a></h4>
+              <p><i class="fa-regular fa-circle-check"></i>Cras justo odio.</p>
+              <p><i class="fa-regular fa-circle-check"></i>Dapibus ac facilisis in.</p>
+              <p><i class="fa-regular fa-circle-check"></i>Morbi leo risus.</p>
+              <p><i class="fa-regular fa-circle-check"></i>Excepteur sint occaecat velit.</p></div>
+
+            
+          </div>
+        </div>
+      
+      </div>
+    </section>
+
+    <section id="team" class="container text-center">
+
+        <h5 class="d-inline-block rounded-pill">Our Team</h5>
+        <h1 class="mt-2">Our Creative Team</h1>
+        <p >There are many variations of passages of Lorem Ipsum available,  but the majority have suffered alteration in some form.</p>
+        
+        <div id="team-workers-container" class="row justify-content-between ">
+        
+            <div class=" col-12 col-lg-4 my-4 my-lg-0  px-3">
+              
+             <div id="team-bg-container1" class="team-bg rounded-3"> 
+              <div class="team-sosial-network">
+              <p>
+                <a href="https://www.facebook.com" target="_blank"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a href="https://www.instagram.com" target="_blank"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="https://www.twitter.com" target="_blank"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a href="https://www.linkedin.com" target="_blank"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+                <a href="https://www.youtube.com" target="_blank"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+              </p>
+              <h1>Jeffery Riley</h1>
+              <h3>Art Director</h3>
+            </div>
+          </div>
+            
+            </div>
+
+            <div class=" col-12 col-lg-4 my-4 my-lg-0 px-3">
+              
+              
+              <div id="team-bg-container2" class="team-bg rounded-3">
+                <div class="team-sosial-network">
+                <p>
+                  <a href="https://www.facebook.com" target="_blank"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                  <a href="https://www.instagram.com" target="_blank"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                  <a href="https://www.twitter.com" target="_blank"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                  <a href="https://www.linkedin.com" target="_blank"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                  <a href="https://www.youtube.com" target="_blank"
+                    ><i class="fa-brands fa-youtube"></i
+                  ></a>
+                </p>
+                <h1>Jeffery Riley</h1>
+                <h3>Art Director</h3>
+              </div>
+            </div>
+            
+            </div>
+
+            <div class=" col-12 col-lg-4  my-4 my-lg-0  px-3" >
+              
+              
+              <div id="team-bg-container3" class="team-bg rounded-3">
+                <div class="team-sosial-network">
+                <p>
+                  <a href="https://www.facebook.com" target="_blank"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                  <a href="https://www.instagram.com" target="_blank"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                  <a href="https://www.twitter.com" target="_blank"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                  <a href="https://www.linkedin.com" target="_blank"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                  <a href="https://www.youtube.com" target="_blank"
+                    ><i class="fa-brands fa-youtube"></i
+                  ></a>
+                </p>
+                <h1>Jeffery Riley</h1>
+                <h3>Art Director</h3>
+              </div>
+            </div>
+            
+            </div>
+
+            
+          
+          
+         
+          
+        
+        </div>
+
+
+
+
+
+      
+
+    </section>
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
